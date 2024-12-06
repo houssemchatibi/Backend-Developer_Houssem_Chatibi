@@ -19,13 +19,13 @@ Getting Started
 ## 1. Clone the Repository
 First, clone the repository to your local machine:
 
-bash:
+Run command:
 git clone https://github.com/houssemchatibi/Backend-Developer_Houssem_Chatibi 
 
 ## 2. Install Dependencies
 Once you have cloned the repository, navigate into the project directory and install the necessary dependencies:
 
-bash:
+Run command:
 npm install
 This will install the required packages listed in the package.json file, including:
 
@@ -35,14 +35,14 @@ express-rate-limit: Rate limiting middleware
 ## 3. Configure Environment Variables (Optional)
 If your project requires any environment-specific configurations (e.g., external API keys, database connections), create a .env file in the root of your project and add the necessary variables. For example:
 
-bash:
+Run command:
 PORT=3000
 You can modify the port or any other configuration as needed.
 
 ## 4. Running the Application
 Once everything is set up, you can start the application locally using the following command:
 
-bash:
+Run command:
 npm run dev
 This will start the server on the default port (3000). If you need to run it on a different port, you can set the PORT environment variable in your .env file.
 
