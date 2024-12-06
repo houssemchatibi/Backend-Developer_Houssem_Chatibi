@@ -1,4 +1,4 @@
-
+import rateLimit from 'express-rate-limit';
 import express from "express";
 import dotenv from "dotenv";
 import productRoutes from "./routes/product.routes";
@@ -13,6 +13,16 @@ app.get("/",(req,res)=>{
     res.send("Hello word!")
 })
 
+// Rate limiter: 200 requests per minute per IP address
+const limiter = rateLimit({
+    windowMs: 60 * 1000,  // 1 minute window
+    max: 200,  // Limit each IP to 200 requests per windowMs
+    message: 'Too many requests from this IP, please try again later.',
+    headers: true,
+  });
+  
+  // Apply rate limiting to all routes
+  app.use(limiter);
 app.use(express.json());
 app.use("/api/auth", productRoutes);
 
