@@ -20,7 +20,7 @@ Getting Started
 First, clone the repository to your local machine:
 
 bash:
-git clone https://github.com/your-username/product-api.git
+git clone https://github.com/houssemchatibi/Backend-Developer_Houssem_Chatibi
 cd product-api
 ## 2. Install Dependencies
 Once you have cloned the repository, navigate into the project directory and install the necessary dependencies:
