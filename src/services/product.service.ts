@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import NodeCache from 'node-cache';
-import { products } from '../dummyjson.ts'; // Mock data for products
+import { products } from '../dummyjson'; // Mock data for products
 
 const cache = new NodeCache({ stdTTL: 3600, checkperiod: 600 });
 
