@@ -1,7 +1,8 @@
-Product API APP
+
+## **Product API APP**
 This project is a Node.js application that provides an API for managing products. It includes caching for frequently requested endpoints and rate limiting to ensure fair usage of the server.
 
-Features
+## Features
 Retrieve all products
 Retrieve a single product by ID
 Search for products
